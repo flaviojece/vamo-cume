@@ -1,10 +1,10 @@
 # Análise Comparativa de Funcionalidades: AppDelivery vs. Enatega
 
-Este documento detalha as funcionalidades do **Enatega** e as compara com o que já existe no **AppDelivery**. O objetivo é identificar os recursos mais valiosos a serem desenvolvidos para o projeto **"Vamo Cumê"**.
+Este documento detalha as funcionalidades do **Enatega** e as compara com o que já existe no **AppDelivery**. O objetivo é identificar os recursos mais valiosos a serem desenvolvidos para o projeto **"Vão Cumê"**.
 
 ## Tabela Comparativa de Funcionalidades
 
-| Categoria | Funcionalidade (Enatega) | AppDelivery (Base) | Prioridade para "Vamo Cumê" |
+| Categoria | Funcionalidade (Enatega) | AppDelivery (Base) | Prioridade para "Vão Cumê" |
 | :--- | :--- | :--- | :--- |
 | **App do Cliente** | | |
 | | Login Social (Google, Apple) | ❌ Não | **Alta** |
@@ -50,4 +50,4 @@ O **AppDelivery** fornece uma base sólida com as funcionalidades essenciais par
 
 ## Conclusão
 
-A estratégia de usar o **AppDelivery** como base e enriquecê-lo com as funcionalidades avançadas do **Enatega** é excelente. O plano de desenvolvimento deve focar primeiro nas funcionalidades **críticas** e de **alto valor** para que o "Vamo Cumê" seja lançado como um aplicativo competitivo e atraente tanto para os clientes finais quanto para os restaurantes parceiros.
+A estratégia de usar o **AppDelivery** como base e enriquecê-lo com as funcionalidades avançadas do **Enatega** é excelente. O plano de desenvolvimento deve focar primeiro nas funcionalidades **críticas** e de **alto valor** para que o "Vão Cumê" seja lançado como um aplicativo competitivo e atraente tanto para os clientes finais quanto para os restaurantes parceiros.

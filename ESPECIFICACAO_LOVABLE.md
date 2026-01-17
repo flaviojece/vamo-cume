@@ -1,13 +1,13 @@
 
-# Especificação Técnica para Lovable: Painel do Restaurante "Vamo Cumê"
+# Especificação Técnica para Lovable: Painel do Restaurante "Vão Cumê"
 
-**Objetivo:** Este documento serve como um guia detalhado para a IA do Lovable construir o painel de controle para restaurantes da plataforma "Vamo Cumê". O painel deve ser uma aplicação web responsiva, permitindo que os donos de restaurantes gerenciem seus pedidos, cardápio e configurações.
+**Objetivo:** Este documento serve como um guia detalhado para a IA do Lovable construir o painel de controle para restaurantes da plataforma "Vão Cumê". O painel deve ser uma aplicação web responsiva, permitindo que os donos de restaurantes gerenciem seus pedidos, cardápio e configurações.
 
 ---
 
 ## 1. Visão Geral e Identidade Visual
 
-- **Nome do Projeto:** Painel Vamo Cumê
+- **Nome do Projeto:** Painel Vão Cumê
 - **Público-Alvo:** Donos e gerentes de restaurantes parceiros.
 - **Tom de Voz:** Profissional, simples e direto.
 
@@ -18,7 +18,7 @@
 | **Cores Primárias** | Laranja (ex: `#fb6f2d`), Amarelo Queimado (ex: `#fc9f2c`) |
 | **Cores Secundárias** | Verde (ex: `#279348`), Cinza Escuro (para textos, ex: `#333333`), Cinza Claro (para fundos, ex: `#f4f4f4`) |
 | **Tipografia** | Fonte sem serifa, moderna e de fácil leitura (ex: Inter, Poppins, ou similar). Usar pesos diferentes para hierarquia (Bold para títulos, Regular para corpo de texto). |
-| **Logo** | O logo do "Vamo Cumê" deve ser inserido no topo do menu lateral. |
+| **Logo** | O logo do "Vão Cumê" deve ser inserido no topo do menu lateral. |
 
 ---
 
@@ -31,7 +31,7 @@ A aplicação será composta por uma tela de login e um painel principal com um 
 **Objetivo:** Autenticar o usuário (dono do restaurante) para dar acesso ao painel.
 
 **Componentes:**
-- **Logo do "Vamo Cumê"** centralizado no topo.
+- **Logo do "Vão Cumê"** centralizado no topo.
 - **Campo de E-mail:** Input de texto para o e-mail do usuário.
 - **Campo de Senha:** Input de texto do tipo "password".
 - **Botão "Entrar":** Botão principal que dispara a ação de login.
@@ -50,7 +50,7 @@ Após o login, todas as telas devem seguir um layout padrão com um menu lateral
 
 **Componentes:**
 - **Menu Lateral (Sidebar):**
-  - **Logo do "Vamo Cumê"** no topo.
+  - **Logo do "Vão Cumê"** no topo.
   - **Links de Navegação:**
     - **Pedidos:** Ícone de prancheta. Leva para a página Home (Kanban).
     - **Cardápio:** Ícone de livro de receitas. Leva para a página "Gestor de Cardápio".

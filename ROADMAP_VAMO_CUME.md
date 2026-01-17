@@ -1,18 +1,18 @@
-# Plano de Personalização e Roadmap do Projeto "Vamo Cumê"
+# Plano de Personalização e Roadmap do Projeto "Vão Cumê"
 
-Este documento descreve o plano estratégico para transformar a base do `AppDelivery` no aplicativo **"Vamo Cumê"**, incorporando as funcionalidades avançadas inspiradas no `Enatega`. O desenvolvimento será dividido em fases (versões) para garantir entregas incrementais e de valor.
+Este documento descreve o plano estratégico para transformar a base do `AppDelivery` no aplicativo **"Vão Cumê"", incorporando as funcionalidades avançadas inspiradas no `Enatega`. O desenvolvimento será dividido em fases (versões) para garantir entregas incrementais e de valor.
 
 ## Versão 1.0: MVP (Produto Mínimo Viável) - O Lançamento
 
-**Objetivo:** Lançar a primeira versão funcional do app com a identidade visual do "Vamo Cumê" e a melhoria mais crítica: o rastreamento em tempo real.
+**Objetivo:** Lançar a primeira versão funcional do app com a identidade visual do "Vão Cumê" e a melhoria mais crítica: o rastreamento em tempo real.
 
 | Tarefa | Descrição | Status |
 | :--- | :--- | :--- |
-| **1. Branding e Customização** | - Alterar o nome e os logotipos em todos os frontends (App Cliente, App Entregador, Web Restaurante).<br>- Ajustar o esquema de cores para refletir a marca "Vamo Cumê". | A Fazer |
+| **1. Branding e Customização** | - Alterar o nome e os logotipos em todos os frontends (App Cliente, App Entregador, Web Restaurante).<br>- Ajustar o esquema de cores para refletir a marca "Vão Cumê". | A Fazer |
 | **2. Configuração do Ambiente** | - Realizar a instalação completa da plataforma (backend e frontend) em um ambiente de desenvolvimento para garantir que tudo funcione como esperado. | A Fazer |
 | **3. Integração de Mapas (Feature Crítica)** | - Substituir o cálculo de distância Haversine por uma API de mapas real (sugestão: **Mapbox**, por ter um plano gratuito generoso).<br>- **App do Cliente:** Exibir o mapa com a rota e a localização do entregador em tempo real.<br>- **App do Entregador:** Exibir o mapa com a rota até o restaurante e depois até o cliente. | A Fazer |
 
-**Resultado Esperado ao Final da v1.0:** Um aplicativo 100% funcional, com a cara do "Vamo Cumê", pronto para ser testado em um ambiente real com alguns restaurantes e clientes parceiros.
+**Resultado Esperado ao Final da v1.0:** Um aplicativo 100% funcional, com a cara do "Vão Cumê", pronto para ser testado em um ambiente real com alguns restaurantes e clientes parceiros.
 
 ## Versão 1.1: Engajamento e Confiança
 

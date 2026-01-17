@@ -1,6 +1,6 @@
-# Próximos Passos Práticos para o Projeto "Vamo Cumê"
+# Próximos Passos Práticos para o Projeto "Vão Cumê"
 
-Este documento resume as ações concretas que devem ser realizadas para dar continuidade ao desenvolvimento do **"Vamo Cumê"**.
+Este documento resume as ações concretas que devem ser realizadas para dar continuidade ao desenvolvimento do **"Vão Cumê"**.
 
 ## 1. Configurar o Ambiente de Desenvolvimento
 
@@ -18,12 +18,12 @@ Para começar a trabalhar no projeto, é necessário ter o ambiente de desenvolv
 3. Configurar as URLs do backend nos arquivos de configuração dos frontends (AppComida, AppEntrega, WebRestaurant).
 4. Rodar os aplicativos frontend localmente para garantir que tudo está funcionando.
 
-## 2. Personalizar a Marca "Vamo Cumê"
+## 2. Personalizar a Marca "Vão Cumê"
 
-Após confirmar que o ambiente está funcionando, o próximo passo é aplicar a identidade visual do "Vamo Cumê".
+Após confirmar que o ambiente está funcionando, o próximo passo é aplicar a identidade visual do "Vão Cumê".
 
 **Tarefas:**
-- Criar ou obter o logotipo do "Vamo Cumê" (nos formatos PNG e SVG).
+- Criar ou obter o logotipo do "Vão Cumê" (nos formatos PNG e SVG).
 - Substituir os logotipos nos três projetos de frontend (AppComida, AppEntrega, WebRestaurant).
 - Definir a paleta de cores principal do aplicativo (sugestão: usar tons que remetam à culinária mineira, como amarelo, verde e laranja).
 - Atualizar os arquivos de configuração de cores (Tailwind CSS) nos projetos.
@@ -70,7 +70,7 @@ Após os testes, o aplicativo estará pronto para o lançamento inicial (MVP).
 
 Você mencionou o uso do Lovable no desenvolvimento. O Lovable é uma ferramenta excelente para criar interfaces web de forma visual e rápida. Ele pode ser utilizado, por exemplo, para:
 
-- Criar páginas de marketing para o "Vamo Cumê" (landing page, página de cadastro de restaurantes).
+- Criar páginas de marketing para o "Vão Cumê" (landing page, página de cadastro de restaurantes).
 - Desenvolver protótipos de novas funcionalidades antes de implementá-las no código.
 - Criar dashboards personalizados para análises e relatórios.
 
