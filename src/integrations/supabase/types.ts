@@ -59,6 +59,126 @@ export type Database = {
         }
         Relationships: []
       }
+      delivery_assignments: {
+        Row: {
+          accepted_at: string | null
+          cancellation_reason: string | null
+          cancelled_at: string | null
+          created_at: string | null
+          delivered_at: string | null
+          delivery_fee: number | null
+          deliveryman_id: string
+          id: string
+          order_id: string
+          picked_up_at: string | null
+          status: string | null
+          tip: number | null
+          updated_at: string | null
+        }
+        Insert: {
+          accepted_at?: string | null
+          cancellation_reason?: string | null
+          cancelled_at?: string | null
+          created_at?: string | null
+          delivered_at?: string | null
+          delivery_fee?: number | null
+          deliveryman_id: string
+          id?: string
+          order_id: string
+          picked_up_at?: string | null
+          status?: string | null
+          tip?: number | null
+          updated_at?: string | null
+        }
+        Update: {
+          accepted_at?: string | null
+          cancellation_reason?: string | null
+          cancelled_at?: string | null
+          created_at?: string | null
+          delivered_at?: string | null
+          delivery_fee?: number | null
+          deliveryman_id?: string
+          id?: string
+          order_id?: string
+          picked_up_at?: string | null
+          status?: string | null
+          tip?: number | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "delivery_assignments_deliveryman_id_fkey"
+            columns: ["deliveryman_id"]
+            isOneToOne: false
+            referencedRelation: "deliverymen"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "delivery_assignments_order_id_fkey"
+            columns: ["order_id"]
+            isOneToOne: false
+            referencedRelation: "orders"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      deliverymen: {
+        Row: {
+          avatar_url: string | null
+          created_at: string | null
+          current_lat: number | null
+          current_lng: number | null
+          document_url: string | null
+          full_name: string
+          id: string
+          is_active: boolean | null
+          is_available: boolean | null
+          phone: string
+          rating: number | null
+          total_deliveries: number | null
+          updated_at: string | null
+          user_id: string
+          vehicle_plate: string | null
+          vehicle_type: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string | null
+          current_lat?: number | null
+          current_lng?: number | null
+          document_url?: string | null
+          full_name: string
+          id?: string
+          is_active?: boolean | null
+          is_available?: boolean | null
+          phone: string
+          rating?: number | null
+          total_deliveries?: number | null
+          updated_at?: string | null
+          user_id: string
+          vehicle_plate?: string | null
+          vehicle_type: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string | null
+          current_lat?: number | null
+          current_lng?: number | null
+          document_url?: string | null
+          full_name?: string
+          id?: string
+          is_active?: boolean | null
+          is_available?: boolean | null
+          phone?: string
+          rating?: number | null
+          total_deliveries?: number | null
+          updated_at?: string | null
+          user_id?: string
+          vehicle_plate?: string | null
+          vehicle_type?: string
+        }
+        Relationships: []
+      }
       favorites: {
         Row: {
           created_at: string
@@ -346,6 +466,7 @@ export type Database = {
           minimum_order: number
           name: string
           opening_hours: Json | null
+          owner_id: string | null
           phone: string | null
           rating: number | null
           review_count: number | null
@@ -366,6 +487,7 @@ export type Database = {
           minimum_order?: number
           name: string
           opening_hours?: Json | null
+          owner_id?: string | null
           phone?: string | null
           rating?: number | null
           review_count?: number | null
@@ -386,6 +508,7 @@ export type Database = {
           minimum_order?: number
           name?: string
           opening_hours?: Json | null
+          owner_id?: string | null
           phone?: string | null
           rating?: number | null
           review_count?: number | null
@@ -438,15 +561,42 @@ export type Database = {
           },
         ]
       }
+      user_roles: {
+        Row: {
+          created_at: string | null
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "customer" | "restaurant_owner" | "deliveryman" | "admin"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -573,6 +723,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["customer", "restaurant_owner", "deliveryman", "admin"],
+    },
   },
 } as const
